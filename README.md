@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! This project showcases my skills, projects, and experience in **DSA, Machine Learning, AI, and Web Development**.
 
 ## 🌐 Live Demo
-[Visit My Portfolio](#)
+[Visit My Portfolio](https://irfanhussain.vercel.app)
 
 ## 📂 Project Structure
 ```
