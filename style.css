@@ -1011,6 +1011,14 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+  .nav-logo{
+    padding-left: 0;
+  }
+
+  .nav-buttons{
+    padding-right: 0;
+  }
+
   .container {
     padding-inline: 1.25rem;
   }
@@ -1037,6 +1045,14 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
+  .nav-logo{
+    padding-left: 0;
+  }
+
+  .nav-buttons{
+    padding-right: 0;
+  }
+
   .nav-menu {
     padding-left: 6rem;
   }
