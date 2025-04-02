@@ -261,7 +261,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   height: 5rem;
-  max-width: 1540px;
+  max-width: 100%;
 }
 
 .nav-logo,
@@ -859,7 +859,7 @@ textarea {
 }
 
 /* Footer */
-footer {
+.footer {
   border-top: 1px solid var(--shadow-color);
   background-color: var(--container-color);
   padding-block: 2rem;
@@ -992,6 +992,10 @@ footer {
     transform: scale(0.7);
   }
 
+  .about-me-container {
+    font-size: var(--normal-font-size);
+  }
+
   .skills-container {
     grid-template-columns: fit-content(550px);
     justify-content: center;
@@ -1039,6 +1043,10 @@ footer {
   .home-data {
     transform: scale(0.6);
   }
+
+  .about-me-container {
+    font-size: var(--normal-font-size);
+  }
   
   .skills-container {
     row-gap: 3rem;
@@ -1069,6 +1077,10 @@ footer {
 
   .home-data {
     transform: scale(0.5);
+  }
+
+  .about-me-container {
+    font-size: var(--normal-font-size);
   }
 
   .card {
