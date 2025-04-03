@@ -39,7 +39,7 @@ themeToggle.addEventListener('click', () => {
 // scroll animation
 AOS.init({
     duration: 1000,
-    once: false, 
+    once: false,
 });
 console.log(AOS);
 
@@ -117,26 +117,35 @@ const contactForm = document.getElementById('contact-form'),
 const sendEmail = (e) => {
     e.preventDefault();
 
-    if (contactName.value === '' || contactEmail.value === '' || contactSubject.value === '' || contactMessage.value === '') {
-        message.classList.remove('color-first');
-        message.classList.add('color-red');
-        message.textContent = 'Write all the input fields';
+    const name = contactName.value.trim();
+    const email = contactEmail.value.trim();
+    const subject = contactSubject.value.trim();
+    const messageText = contactMessage.value.trim();
 
-        setTimeout(() => {
-            message.textContent = '';
-        }, 3000);
+    const namePattern = /^[A-Za-z\s]+$/; // Allows only letters and spaces
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!name || !email || !subject || !messageText) {
+        showMessage('All fields are required!', 'color-red');
+    } else if (!namePattern.test(name)) {
+        showMessage('Name should only contain letters!', 'color-red');
+    } else if (!emailPattern.test(email)) {
+        showMessage('Enter a valid email address!', 'color-red');
+    } else if (subject.length < 5) {
+        showMessage('Subject must be at least 5 characters!', 'color-red');
+    } else if (messageText.length < 10) {
+        showMessage('Message must be at least 10 characters!', 'color-red');
     } else {
         const templateParams = {
-            name: contactName.value,
-            email: contactEmail.value,
-            subject: contactSubject.value,
-            message: contactMessage.value
+            name: name,
+            email: email,
+            subject: subject,
+            message: messageText
         };
 
         emailjs.send('service_117t76p', 'template_07ct9km', templateParams, 'Co7Q7c0XUW8JmpJwa')
             .then(() => {
-                message.classList.add('color-first');
-                message.textContent = 'Message sent ✅';
+                showMessage('Message sent ✅', 'color-first');
 
                 setTimeout(() => {
                     message.textContent = '';
@@ -149,7 +158,19 @@ const sendEmail = (e) => {
             });
     }
 };
+
+const showMessage = (text, colorClass) => {
+    message.classList.remove('color-first', 'color-red');
+    message.classList.add(colorClass);
+    message.textContent = text;
+
+    setTimeout(() => {
+        message.textContent = '';
+    }, 3000);
+};
+
 contactForm.addEventListener('submit', sendEmail);
+
 
 
 // remove menu mobile
