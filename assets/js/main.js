@@ -55,7 +55,7 @@ window.onload = typeEffect;
 
 // name typing animation
 const typed = new Typed('.typing', {
-    strings: ['Web Developer', 'Web Designer', 'Freelancer'],
+    strings: ['Web Development', 'GenAI', 'Freelancing', 'Open Source'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
