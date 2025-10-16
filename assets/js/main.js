@@ -39,9 +39,8 @@ themeToggle.addEventListener('click', () => {
 // scroll animation
 AOS.init({
     duration: 1000,
-    once: false,
+    once: true,
 });
-console.log(AOS);
 
 // Typing Effect
 const text = "Irfan Hussain";
