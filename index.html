@@ -4,546 +4,261 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-
-  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
-  </link>
-
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-
-  <title>Irfan Hussain</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" />
+  <title>Irfan Hussain // Portfolio</title>
 </head>
 
-<body>
-  <header class="header" id="header" data-aos="fade-down">
+<body class="dark">
+  <header class="header" id="header">
     <nav class="nav container">
-      <a href="/" class="nav-logo">&lt; irfan /&gt;</irfan></a>
-
+      <a href="/" class="nav-logo">irfan<span class="logo-cursor">_</span></a>
       <div class="nav-menu" id="nav-menu">
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#home" class="nav-link active-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about-me" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
+          <li><a href="#home" class="nav-link active-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/irfan-hussain25" target="_blank" class="social-link">
-            <i class="ri-linkedin-fill"></i>
-          </a>
-          <a href="https://github.com/irfanhussain25" target="_blank" class="social-link">
-            <i class="ri-github-fill"></i>
-          </a>
-          <a href="https://x.com/irfan2502" target="_blank" class="social-link">
-            <i class="ri-twitter-x-fill"></i>
-          </a>
-        </div>
-
-        <div class="section-deco deco-left header-deco">
-          <img src="assets/img/shape-1.png" alt="" class="shape">
-        </div>
       </div>
-
       <div class="nav-buttons">
-        <div class="nav-theme-toggle" id="theme-toggle">
-          <i class="ri-moon-fill theme-icon" id="icon-toggle"></i>
-        </div>
-
-        <div class="nav-toggle" id="nav-toggle">
-          <div class="nav-toggle-bar"></div>
-        </div>
+        <div class="nav-theme-toggle" id="theme-toggle"><i class="ri-sun-line theme-icon" id="icon-toggle"></i></div>
+        <div class="nav-toggle" id="nav-toggle"></div>
       </div>
     </nav>
   </header>
 
   <main class="main">
     <section class="home section" id="home">
-      <div class="home-container container">
+      <div class="home-container container grid">
         <div class="home-content">
-          <h2 class="home-subtitle" data-aos="fade-right">Hello, <span>my name is</span></h2>
-          <h1 class="home-title" data-aos="fade-right"><span>Irfan</span> Hussain</h1>
-          <h3 class="home-job" data-aos="fade-right">I'm into <span class="typing"></span></h3>
-
-          <div class="home-banner">
-            <div class="home-img-wrapper" data-aos="zoom-out">
-              <img src="assets/img/profile1.gif" alt="" class="home-profile" />
-            </div>
-
-            <div class="home-data home-data-one">
-              <span class="home-data-no">3rd</span>
-              <h3 class="home-data-title">Year CSE <span>Student</span></h3>
-            </div>
-
-            <div class="home-data home-data-two">
-              <span class="home-data-no">10+</span>
-              <h3 class="home-data-title">Completed <span>Projects</span></h3>
-            </div>
-
-            <img src="assets/img/shape-1.png" alt="" class="shape shape-1">
-            <img src="assets/img/shape-2.png" alt="" class="shape shape-2">
-            <img src="assets/img/shape-3.png" alt="" class="shape shape-3">
-          </div>
-
-          <p class="home-description" data-aos="fade-left">
-            I am a passionate Full Stack Developer with expertise in creating dynamic and responsive web
-            applications.
+          <span class="home-greeting" data-aos="fade-down">Hello, I'm</span>
+          <h1 class="home-title" data-aos="fade-down" data-aos-delay="100" data-text="Irfan Hussain">Irfan Hussain</h1>
+          <h3 class="home-subtitle" data-aos="fade-down" data-aos-delay="200">I'm into <span class="typing"></span></h3>
+          <p class="home-description" data-aos="fade-down" data-aos-delay="300">
+            I build high-performance applications and intelligent solutions that solve complex and real world problems.
           </p>
-
+          <div class="home-buttons" data-aos="fade-up" data-aos-delay="400">
+            <a href="#contact" class="btn btn-primary">[ Get In Touch ]</a>
+            <a download href="assets/pdf/Irfan_Hussain_Resume.pdf" class="btn btn-secondary">[ Download Resume ]</a>
+          </div>
+        </div>
+        <div class="home-info-panel" data-aos="fade-left" data-aos-delay="500">
+          <pre class="home-ascii">
+//_ ASCII art representation
++------------------------+
+|        > irfan         |
+|   - building stuff -   |
+|      version 2.0       |
++------------------------+
+                    </pre>
+          <div class="home-stats">
+            <div class="stat-item"><span>Hackathons</span>
+              <p>Finalist</p>
+            </div>
+            <div class="stat-item"><span>Projects</span>
+              <p>10+</p>
+            </div>
+            <div class="stat-item"><span>LeetCode</span>
+              <p>180+</p>
+            </div>
+          </div>
           <div class="home-socials social-links">
-            <a href="https://www.linkedin.com/in/irfan-hussain25" data-aos="fade-up" data-aos-delay="400"
-              target="_blank" class="social-link">
-              <i class="ri-linkedin-fill"></i>
-            </a>
-            <a href="https://github.com/irfanhussain25" target="_blank" data-aos="fade-up" data-aos-delay="500"
-              class="social-link">
-              <i class="ri-github-fill"></i>
-            </a>
-            <a href="https://x.com/irfan2502" target="_blank" data-aos="fade-up" data-aos-delay="600"
-              class="social-link">
-              <i class="ri-twitter-x-fill"></i>
-            </a>
+            <a href="https://www.linkedin.com/in/irfan-hussain25" target="_blank" class="social-link"><i
+                class="ri-linkedin-fill"></i></a>
+            <a href="https://github.com/irfanhussain25" target="_blank" class="social-link"><i
+                class="ri-github-fill"></i></a>
+            <a href="https://x.com/irfan2502" target="_blank" class="social-link"><i class="ri-twitter-x-fill"></i></a>
           </div>
-
-          <div class="home-btns" data-aos="fade-right">
-            <a download="" href="assets/pdf/Irfan_Hussain_Resume.pdf" class="btn">Download Resume</a>
-            <a href="#" class="home-link">My Skills</a>
-          </div>
-        </div>
-
-        <div class="section-deco deco-left">
-          <img src="assets/img/shape-1.png" alt="" class="shape">
         </div>
       </div>
     </section>
 
-    <section class="about-me section" id="about-me">
-      <h2 class="section-title" data-title="Know about me" data-aos="fade-left">About Me</h2>
-      <div class="about-me-container container">
-        <img src="assets/img/profile.jpg" alt="" class="about-me-img" data-aos="zoom-in">
-
-        <h3 data-aos="fade-right">Hey there, I'm <span id="typing-effect">Irfan Hussain</span>! 🚀</h3>
-
-        <p data-aos="fade-right" data-aos-delay="400">
-          <strong>💡 Passionate Software Developer</strong> with expertise in <strong>JavaScript, Python, and
-            C++</strong>. Proficient in <strong>React, Next.js, and MongoDB</strong>, I thrive on crafting scalable and
-          high-performance applications.
-        </p>
-
-        <p data-aos="fade-left" data-aos-delay="800">
-          Currently pursuing my <strong>Bachelor's in Computer Science</strong> at <strong>VIT Chennai</strong>, I'm
-          driven by innovation and problem-solving. Exploring emerging technologies excites me, and I aim to build
-          solutions that make a difference.
-        </p>
-
-        <blockquote data-aos="fade-right" data-aos-delay="1000">“Technology is best when it brings people together.” –
-          Matt Mullenweg</blockquote>
-
-        <p data-aos="fade-left" data-aos-delay="1200">
-          🚀 <strong>Let's Create Something Amazing!</strong> I'm open to <strong>collaborations, freelance work, and
-            exciting projects</strong>. Let’s connect and bring ideas to life!
-        </p>
-
-        <div class="social-links">
-          <a data-aos="fade-up" data-aos-delay="400" href="https://www.linkedin.com/in/irfan-hussain25" target="_blank"
-            class="social-link">
-            <i class="ri-linkedin-fill"></i>
-          </a>
-          <a data-aos="fade-up" data-aos-delay="500" href="https://github.com/irfanhussain25" target="_blank"
-            class="social-link">
-            <i class="ri-github-fill"></i>
-          </a>
-          <a data-aos="fade-up" data-aos-delay="600" href="https://x.com/irfan2502" target="_blank" class="social-link">
-            <i class="ri-twitter-x-fill"></i>
-          </a>
+    <section class="about section" id="about">
+      <div class="section-header container" data-aos="fade-up">
+        <h2 class="section-title"><span class="section-title-comment">// 01.</span> About Me</h2>
+      </div>
+      <div class="about-container container grid">
+        <div class="about-content" data-aos="fade-right" data-aos-delay="100">
+          <p>I'm a motivated developer with expertise in <strong>C++, Python, and JavaScript</strong>, and a strong
+            command of modern frameworks like <strong>React and Next.js</strong>. My passion lies in engineering robust
+            applications that deliver exceptional user experiences.</p>
+          <p>As a Computer Science student at <strong>VIT Chennai</strong>, I'm constantly exploring new technologies to
+            solve complex problems. I thrive in collaborative environments and am always eager to take on challenges in
+            AI/ML and full-stack development.</p>
         </div>
-
-        <div class="section-deco deco-right">
-          <img src="assets/img/shape-1.png" alt="" class="shape">
+        <div class="about-image-wrapper" data-aos="fade-left" data-aos-delay="200">
+          <img src="assets/img/profile.jpg" alt="Irfan Hussain" class="about-image">
         </div>
       </div>
     </section>
 
-    <section class="skills section" id="skills" data-aos="fade-up">
-      <h2 class="section-title" data-title="My Tech Stack">My Skills</h2>
-
-      <div class="skills-container container grid" data-aos="fade-right">
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">Python</h3>
-            <img src="assets/img/python.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 80%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">JavaScript</h3>
-
-            <img src="assets/img/javascript.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 80%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">C/C++</h3>
-            <img src="assets/img/cpp.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 85%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">HTML</h3>
-            <img src="assets/img/html.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 95%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">CSS</h3>
-            <img src="assets/img/css.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 90%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">React</h3>
-            <img src="assets/img/react.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 75%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">NextJS</h3>
-            <img src="assets/img/nextjs.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 80%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">MongoDB</h3>
-            <img src="assets/img/mongodb.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 65%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">NodeJS</h3>
-            <img src="assets/img/nodejs.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 80%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">ExpressJS</h3>
-            <img src="assets/img/expressjs.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 75%;"></span>
-          </div>
-        </div>
-
-        <div class="skills-item">
-          <div class="skills-header">
-            <h3 class="skills-name">TailwindCSS</h3>
-            <img src="assets/img/tailwindcss.png" width="30px" alt="">
-          </div>
-
-          <div class="skills-bar">
-            <span class="skills-percentage" style="width: 70%;"></span>
-          </div>
-        </div>
-
-        <div class="section-deco deco-left">
-          <img src="assets/img/shape-1.png" alt="" class="shape">
-        </div>
+    <section class="skills section" id="skills">
+      <div class="section-header container" data-aos="fade-up">
+        <h2 class="section-title"><span class="section-title-comment">// 02.</span> Skills</h2>
       </div>
+      <div class="skills-container container">
+        <div class="skills-group" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="skills-group-title">&gt; Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><img src="assets/img/cpp.png" alt="C++">C/C++</div>
+            <div class="skill-item"><img src="assets/img/java.png" alt="Java">Java</div>
+            <div class="skill-item"><img src="assets/img/python.png" alt="Python">Python</div>
+            <div class="skill-item"><img src="assets/img/javascript.png" alt="JavaScript">JavaScript</div>
+          </div>
+        </div>
+        <div class="skills-group" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="skills-group-title">&gt; Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><img src="assets/img/html.png" alt="HTML">HTML</div>
+            <div class="skill-item"><img src="assets/img/css.png" alt="CSS">CSS</div>
+            <div class="skill-item"><img src="assets/img/tailwindcss.png" alt="Tailwind CSS">Tailwind CSS</div>
+            <div class="skill-item"><img src="assets/img/react.png" alt="React">React.js</div>
+            <div class="skill-item"><img src="assets/img/nextjs.png" alt="Next.js">Next.js</div>
+          </div>
+        </div>
+        <div class="skills-group" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="skills-group-title">&gt; Backend & Databases</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><img src="assets/img/nodejs.png" alt="Node.js">Node.js</div>
+            <div class="skill-item"><img src="assets/img/expressjs.png" alt="Express.js">Express.js</div>
+            <div class="skill-item"><img src="assets/img/mongodb.png" alt="MongoDB">MongoDB</div>
+            <div class="skill-item"><img src="assets/img/supabase.png" alt="Supabase">Supabase</div>
+            <div class="skill-item"><img src="assets/img/mysql.png" alt="MySQL">MySQL</div>
+          </div>
+        </div>
+        <div class="skills-group" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="skills-group-title">&gt; Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><img src="assets/img/docker.png" alt="Docker">Docker</div>
+            <div class="skill-item"><img src="assets/img/git.png" alt="Git">Git</div>
+            <div class="skill-item"><img src="assets/img/postman.png" alt="Postman">Postman</div>
+          </div>
+        </div>
     </section>
 
-    <section class="projects section" id="projects" data-aos="fade-right">
-      <h2 class="section-title" data-title="My Works">Projects</h2>
-
-      <div class="container">
-        <div class="swiper projects-swiper">
+    <section class="projects section" id="projects">
+      <div class="section-header container" data-aos="fade-up">
+        <h2 class="section-title"><span class="section-title-comment">// 03.</span> Projects</h2>
+      </div>
+      <div class="projects-container container">
+        <div class="swiper projects-swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-            <!-- Project 1 -->
-            <div class="swiper-slide card">
-              <img src="assets/img/PDFy.png" alt="" class="projects-img" width="500px">
-              <h3 class="projects-title">PDFy</h3>
-              <p class="projects-description">
-                Built for Adobe India Hackathon 2025, PDFy is an AI-powered intelligent web-based PDF reader designed to
-                transform a static PDF document library into an interactive and insightful experience.
-              </p>
-              <div class="links">
-                <a target="_blank" href="https://github.com/IrfanHussain25/Adobe_Round3" class="link">
-                  <i class="ri-github-fill link-icon"></i>
-                </a>
-                <a target="_blank" href="https://pdfreader-rlg4.onrender.com/" class="link">
-                  <i class="ri-global-line link-icon"></i>
-                </a>
+            <div class="project-card swiper-slide">
+              <div class="project-header">
+                <i class="ri-folder-3-line"></i>
+                <div class="project-header-links">
+                  <a target="_blank" href="https://github.com/IrfanHussain25/Adobe_Round3"><i
+                      class="ri-github-fill"></i></a>
+                  <a target="_blank" href="https://pdfreader-rlg4.onrender.com/"><i class="ri-global-line"></i></a>
+                </div>
               </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="swiper-slide card">
-              <img src="assets/img/medbay.png" alt="" class="projects-img" width="500px">
-              <h3 class="projects-title">MedBay</h3>
-              <p class="projects-description">
-                An AI-powered public health chatbot for SIH 2025. It makes healthcare information accessible with a multilingual chat interface, a symptom checker, and AI-driven analysis of medical reports and X-rays.
+              <h3 class="project-title">PDFy</h3>
+              <p class="project-description">
+                Built for Adobe India Hackathon 2025, an AI-powered PDF reader that turns a
+                static library into an interactive, insightful experience.
               </p>
-              <div class="links">
-                <a target="_blank" href="https://github.com/IrfanHussain25/MedbayTeamSyn3rgy" class="link">
-                  <i class="ri-github-fill link-icon"></i>
-                </a>
-              </div>
+              <div class="project-tech"><span>Next.js</span><span>FastAPI</span><span>Docker</span></div>
             </div>
-
-            <!-- Project 3 -->
-            <div class="swiper-slide card">
-              <img src="assets/img/get-me-a-chai.png" alt="" class="projects-img" width="500px">
-              <h3 class="projects-title">Get Me A Chai</h3>
-              <p class="projects-description">
-                Get Me A Chai is a crowdfunding platform designed for creators to fund their projects with the support
-                of their fans. Fans can contribute by buying a virtual "chai," helping creators bring their ideas to
-                life.
+            <div class="project-card swiper-slide">
+              <div class="project-header"><i class="ri-folder-3-line"></i><a target="_blank"
+                  href="https://github.com/IrfanHussain25/MedbayTeamSyn3rgy"><i class="ri-github-fill"></i></a></div>
+              <h3 class="project-title">MedBay</h3>
+              <p class="project-description">
+                AI health chatbot built for SIH 2025 with a multilingual interface and
+                AI-driven analysis of medical reports and X-rays.
               </p>
-              <div class="links">
-                <a target="_blank" href="https://github.com/IrfanHussain25/get-me-a-chai" class="link">
-                  <i class="ri-github-fill link-icon"></i>
-                </a>
-              </div>
+              <div class="project-tech"><span>Next.js</span><span>Twilio</span><span>Gemini API</span></div>
             </div>
-
-            <!-- Project 4 -->
-            <div class="swiper-slide card">
-              <img src="assets/img/iTask.png" alt="" class="projects-img" width="500px">
-              <h3 class="projects-title">iTask</h3>
-              <p class="projects-description">
-                iTask is a simple and efficient Todo List application designed to streamline your task management.
+            <div class="project-card swiper-slide">
+              <div class="project-header"><i class="ri-folder-3-line"></i><a target="_blank"
+                  href="https://github.com/IrfanHussain25/get-me-a-chai"><i class="ri-github-fill"></i></a></div>
+              <h3 class="project-title">Get Me A Chai</h3>
+              <p class="project-description">
+                A full-stack crowdfunding platform for creators, featuring secure payment
+                handling.
               </p>
-              <div class="links">
-                <a target="_blank" href="https://github.com/IrfanHussain25/iTask-Your-Task-Planner" class="link">
-                  <i class="ri-github-fill link-icon"></i>
-                </a>
-              </div>
+              <div class="project-tech"><span>Next.js</span><span>MongoDB</span><span>Razorpay</span></div>
             </div>
-
-            <!-- Project 5 -->
-            <div class="swiper-slide card">
-              <img src="assets/img/passop.png" alt="" class="projects-img" width="500px">
-              <h3 class="projects-title">PassOP</h3>
-              <p class="projects-description">
-                PassOP is a simple and secure password manager application allowing users to manage their passwords for
-                various websites.
+            <div class="project-card swiper-slide">
+              <div class="project-header"><i class="ri-folder-3-line"></i><a target="_blank"
+                  href="https://github.com/irfanhussain25/talk-pdf"><i class="ri-github-fill"></i></a></div>
+              <h3 class="project-title">TalkPDF</h3>
+              <p class="project-description">
+                An AI chatbot allowing interactive Q&A on PDFs with persistent memory
+                across sessions.
               </p>
-              <div class="links">
-                <a target="_blank" href="https://github.com/IrfanHussain25/PassOP-Your-Own-Password-Manager" class="link">
-                  <i class="ri-github-fill link-icon"></i>
-                </a>
-              </div>
+              <div class="project-tech"><span>Next.js</span><span>Supabase</span><span>Gemini API</span></div>
             </div>
-
           </div>
-
-          <div class="swiper-pagination"></div>
-
         </div>
-
-        <div class="section-deco deco-right">
-          <img src="assets/img/shape-1.png" alt="" class="shape">
-        </div>
+        <div class="swiper-pagination" data-aos="fade-up" data-aos-delay="200"></div>
       </div>
-
     </section>
 
-    <section class="contact section" id="contact" data-aos="fade-up">
-      <h2 class="section-title" data-title="Lets Talk">Contact Me</h2>
-
-      <div class="contact-container container grid">
-        <div class="contact-content">
-          <div class="contact-card">
-            <span class="contact-icon" data-aos="fade-right" data-aos-delay="400">
-              <i class="ri-map-2-line"></i>
-            </span>
-
-            <div data-aos="fade-right">
-              <h3 class="contact-title" data-aos="fade-right" data-aos-delay="550">Address</h3>
-              <p class="contact-data" data-aos="fade-right" data-aos-delay="550">Chennai, India</p>
+    <section class="contact section" id="contact">
+      <div class="section-header container" data-aos="fade-up">
+        <h2 class="section-title"><span class="section-title-comment">// 04.</span> Contact</h2>
+      </div>
+      <div class="contact-container container">
+        <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+          <h3>Let's build something great.</h3>
+          <p>I'm currently open to new opportunities. If you have a project in mind or just want to connect, feel free
+            to reach out.</p>
+          <div class="contact-info-group">
+            <div class="contact-info-item"><span>// email</span>
+              <p>irfanhussain0004@gmail.com</p>
             </div>
-          </div>
-
-          <div class="contact-card" data-aos="fade-right" data-aos-delay="600">
-            <span class="contact-icon">
-              <i class="ri-user-line"></i>
-            </span>
-
-            <div data-aos="fade-right" data-aos-delay="750">
-              <h3 class="contact-title">Freelance</h3>
-              <p class="contact-data">Available Right Now</p>
-            </div>
-          </div>
-
-          <div class="contact-card" data-aos="fade-right" data-aos-delay="800">
-            <span class="contact-icon">
-              <i class="ri-mail-line"></i>
-            </span>
-
-            <div data-aos="fade-right" data-aos-delay="950">
-              <h3 class="contact-title">Email</h3>
-              <p class="contact-data">irfanhussain0004@gmail.com</p>
-            </div>
-          </div>
-
-          <div class="contact-card" data-aos="fade-right" data-aos-delay="1000">
-            <span class="contact-icon">
-              <i class="ri-phone-line"></i>
-            </span>
-
-            <div data-aos="fade-right" data-aos-delay="1050">
-              <h3 class="contact-title">Phone</h3>
-              <p class="contact-data">+91 863 - 804 - 7881</p>
+            <div class="contact-info-item"><span>// location</span>
+              <p>Chennai, India</p>
             </div>
           </div>
         </div>
-
-        <form action="" class="contact-form grid" id="contact-form">
-          <div class="contact-form-group grid">
-            <div class="contact-form-div">
-              <label for="name" class="contact-form-label">Your Full Name <b>*</b></label>
-              <input type="text" name="name" id="contact-name" class="contact-form-input">
-            </div>
-
-            <div class="contact-form-div">
-              <label for="email" class="contact-form-label">Your Email Address <b>*</b></label>
-              <input type="email" name="email" id="contact-email" class="contact-form-input">
-            </div>
+        <form class="contact-form" id="contact-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-form-group">
+            <input type="text" name="name" id="contact-name" class="contact-form-input" placeholder="name *" required>
+            <input type="email" name="email" id="contact-email" class="contact-form-input" placeholder="email *"
+              required>
           </div>
-
-          <div class="contact-form-div">
-            <label for="subject" class="contact-form-label">Your Subject <b>*</b></label>
-            <input type="text" name="subject" id="contact-subject" class="contact-form-input">
+          <input type="text" name="subject" id="contact-subject" class="contact-form-input" placeholder="subject *"
+            required>
+          <textarea name="message" id="contact-message" class="contact-form-input" placeholder="message *"
+            required></textarea>
+          <div class="contact-footer">
+            <p id="message"></p>
+            <button type="submit" class="btn btn-primary">[ Send Message ]</button>
           </div>
-
-          <div class="contact-form-div">
-            <label for="message" class="contact-form-label">Your Message <b>*</b></label>
-            <textarea name="message" id="contact-message" class="contact-form-input"></textarea>
-          </div>
-
-          <div class="contact-submit">
-            <span>* Accept the terms and conditions.</span>
-            <button type="submit" class="btn">Send Message</button>
-          </div>
-
-          <p id="message"></p>
         </form>
-
-        <div class="section-deco deco-left">
-          <img src="assets/img/shape-1.png" alt="" class="shape">
-        </div>
       </div>
-
     </section>
-
   </main>
 
   <footer class="footer">
     <div class="footer-container container">
+      <p>&copy; <span id="current-year"></span> Irfan Hussain. All Rights Reserved.</p>
       <div class="footer-socials social-links">
-        <a href="https://www.linkedin.com/in/irfan-hussain25" data-aos="fade-up" data-aos-delay="100" target="_blank"
-          class="social-link">
-          <i class="ri-linkedin-fill"></i>
-        </a>
-        <a href="https://github.com/irfanhussain25" data-aos="fade-up" data-aos-delay="200" target="_blank"
-          class="social-link">
-          <i class="ri-github-fill"></i>
-        </a>
-        <a href="https://x.com/irfan2502" data-aos="fade-up" data-aos-delay="300" target="_blank" class="social-link">
-          <i class="ri-twitter-x-fill"></i>
-        </a>
+        <a href="https://www.linkedin.com/in/irfan-hussain25" target="_blank" class="social-link"><i
+            class="ri-linkedin-fill"></i></a>
+        <a href="https://github.com/irfanhussain25" target="_blank" class="social-link"><i
+            class="ri-github-fill"></i></a>
+        <a href="https://x.com/irfan2502" target="_blank" class="social-link"><i class="ri-twitter-x-fill"></i></a>
       </div>
-
-      <p class="footer-copyright">
-        &copy; 2025 <span>Irfan Hussain</span>. All rights reserved
-      </p>
-
-      <p class="footer-copyright">
-        Developed by <span>Irfan Hussain</span>
-      </p>
     </div>
-
   </footer>
 
-  <!-- Typed JS -->
+  <a href="#" class="scroll-up" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
-
-  <!-- Email JS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-
-  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true
-    });
-  </script>
-
+  <script>AOS.init({ once: true, duration: 800, offset: 50 });</script>
   <script src="assets/js/main.js"></script>
+  <script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
 </body>
 
 </html>
